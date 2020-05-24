@@ -107,6 +107,13 @@ namespace WindowsFormsApp1
                 btnToColor.BackColor = dialog.Color;
             }
         }
+        private void tbSpeed_Scroll(object sender, EventArgs e)
+        {
+            foreach (var emiter in emiters)
+            {
+                emiter.Speed = tbRadius.Value;
+            }
+        }
         private void TbSpread_Scroll(object sender, EventArgs e)
         {
             foreach (var emiter in emiters)
