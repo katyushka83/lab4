@@ -81,7 +81,19 @@ namespace WindowsFormsApp1
                 emiter.Direction = tbDirection.Value;
             }
         }
-
+        private void BtnFromColor_Click(object sender, EventArgs e)
+        {
+            var dialog = new ColorDialog();
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                // и тут
+                foreach (var emiter in emiters)
+                {
+                    emiter.FromColor = dialog.Color;
+                }
+                btnFromColor.BackColor = dialog.Color;
+            }
+        }
         private void TbSpread_Scroll(object sender, EventArgs e)
         {
             foreach (var emiter in emiters)
