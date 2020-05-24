@@ -89,41 +89,8 @@ namespace WindowsFormsApp1
                 emiter.Spread = tbSpread.Value;
             }
         }
-        
-        private void BtnFromColor_Click(object sender, EventArgs e)
-        {
-            var dialog = new ColorDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                // и тут
-                foreach (var emiter in emiters)
-                {
-                    emiter.FromColor = dialog.Color;
-                }
-                btnFromColor.BackColor = dialog.Color;
-            }
-        }
-
-        private void BtnToColor_Click(object sender, EventArgs e)
-        {
-            var dialog = new ColorDialog();
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                // и даже тут
-                foreach (var emiter in emiters)
-                {
-                    emiter.ToColor = dialog.Color;
-                }
-                btnToColor.BackColor = dialog.Color;
-            }
-        }
-        private void tbSpeed_Scroll(object sender, EventArgs e)
-        {
-            foreach (var emiter in emiters)
-            {
-                emiter.Speed = tbRadius.Value;
-            }
-        }
+         //
+       
         private void tbRadius_Scroll(object sender, EventArgs e)
         {
             foreach (var emiter in emiters)
