@@ -60,14 +60,12 @@ namespace WindowsFormsApp1
 
             using (var g = Graphics.FromImage(picDisplay.Image))
             {
-                g.Clear(Color.BlueViolet); 
+                g.Clear(Color.DarkSlateBlue); 
                 Render(g);
             }
 
             picDisplay.Invalidate();
         }
-
-
         private void picDisplay_MouseMove(object sender, MouseEventArgs e)
         {/*
                 emiter.Position.X = e.X;
@@ -80,8 +78,9 @@ namespace WindowsFormsApp1
             {
                 emiter.Direction = tbDirection.Value;
             }
-        }
-        private void BtnFromColor_Click(object sender, EventArgs e)
+        }       
+
+        private void BtnFromColor_Click_1(object sender, EventArgs e)
         {
             var dialog = new ColorDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -94,7 +93,8 @@ namespace WindowsFormsApp1
                 btnFromColor.BackColor = dialog.Color;
             }
         }
-        private void BtnToColor_Click(object sender, EventArgs e)
+
+        private void BtnToColor_Click_1(object sender, EventArgs e)
         {
             var dialog = new ColorDialog();
             if (dialog.ShowDialog() == DialogResult.OK)
@@ -107,13 +107,6 @@ namespace WindowsFormsApp1
                 btnToColor.BackColor = dialog.Color;
             }
         }
-        private void tbSpeed_Scroll(object sender, EventArgs e)
-        {
-            foreach (var emiter in emiters)
-            {
-                emiter.Speed = tbRadius.Value;
-            }
-        }
         private void TbSpread_Scroll(object sender, EventArgs e)
         {
             foreach (var emiter in emiters)
@@ -121,14 +114,6 @@ namespace WindowsFormsApp1
                 emiter.Spread = tbSpread.Value;
             }
         }
-         //
-       
-        private void tbRadius_Scroll(object sender, EventArgs e)
-        {
-            foreach (var emiter in emiters)
-            {
-                emiter.Radius = tbRadius.Value;
-            }
-        }
+  
     }
 }

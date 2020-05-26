@@ -37,15 +37,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.btnFromColor = new System.Windows.Forms.Button();
             this.btnToColor = new System.Windows.Forms.Button();
-            this.tbRadius = new System.Windows.Forms.TrackBar();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.tbSpeed = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.picDisplay)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDirection)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSpread)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbRadius)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbSpeed)).BeginInit();
             this.SuspendLayout();
             // 
             // picDisplay
@@ -66,8 +60,8 @@
             // tbDirection
             // 
             this.tbDirection.Location = new System.Drawing.Point(22, 34);
-            this.tbDirection.Maximum = -65;
-            this.tbDirection.Minimum = -115;
+            this.tbDirection.Maximum = -55;
+            this.tbDirection.Minimum = -125;
             this.tbDirection.Name = "tbDirection";
             this.tbDirection.Size = new System.Drawing.Size(104, 45);
             this.tbDirection.TabIndex = 1;
@@ -107,66 +101,29 @@
             // 
             // btnFromColor
             // 
-            this.btnFromColor.Location = new System.Drawing.Point(31, 266);
+            this.btnFromColor.Location = new System.Drawing.Point(31, 140);
             this.btnFromColor.Name = "btnFromColor";
             this.btnFromColor.Size = new System.Drawing.Size(75, 25);
             this.btnFromColor.TabIndex = 5;
             this.btnFromColor.Text = "From Color";
             this.btnFromColor.UseVisualStyleBackColor = true;
+            this.btnFromColor.Click += new System.EventHandler(this.BtnFromColor_Click_1);
             // 
             // btnToColor
             // 
-            this.btnToColor.Location = new System.Drawing.Point(31, 297);
+            this.btnToColor.Location = new System.Drawing.Point(31, 171);
             this.btnToColor.Name = "btnToColor";
             this.btnToColor.Size = new System.Drawing.Size(75, 23);
             this.btnToColor.TabIndex = 6;
             this.btnToColor.Text = "To Color";
             this.btnToColor.UseVisualStyleBackColor = true;
-            // 
-            // tbRadius
-            // 
-            this.tbRadius.Location = new System.Drawing.Point(22, 136);
-            this.tbRadius.Maximum = 15;
-            this.tbRadius.Minimum = 5;
-            this.tbRadius.Name = "tbRadius";
-            this.tbRadius.Size = new System.Drawing.Size(104, 45);
-            this.tbRadius.TabIndex = 6;
-            this.tbRadius.Value = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(31, 117);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(43, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Радиус";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(31, 171);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(55, 13);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Скорость";
-            // 
-            // tbSpeed
-            // 
-            this.tbSpeed.Location = new System.Drawing.Point(22, 187);
-            this.tbSpeed.Name = "tbSpeed";
-            this.tbSpeed.Size = new System.Drawing.Size(104, 45);
-            this.tbSpeed.TabIndex = 5;
+            this.btnToColor.Click += new System.EventHandler(this.BtnToColor_Click_1);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(794, 367);
-            this.Controls.Add(this.tbSpeed);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.tbRadius);
             this.Controls.Add(this.btnToColor);
             this.Controls.Add(this.btnFromColor);
             this.Controls.Add(this.label2);
@@ -179,8 +136,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.picDisplay)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbDirection)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbSpread)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbRadius)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.tbSpeed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -196,10 +151,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnFromColor;
         private System.Windows.Forms.Button btnToColor;
-        private System.Windows.Forms.TrackBar tbRadius;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TrackBar tbSpeed;
     }
 }
 
