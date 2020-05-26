@@ -67,7 +67,7 @@
             // 
             this.tbDirection.Location = new System.Drawing.Point(22, 34);
             this.tbDirection.Maximum = -65;
-            this.tbDirection.Minimum = -90;
+            this.tbDirection.Minimum = -115;
             this.tbDirection.Name = "tbDirection";
             this.tbDirection.Size = new System.Drawing.Size(104, 45);
             this.tbDirection.TabIndex = 1;

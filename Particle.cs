@@ -270,7 +270,7 @@ namespace WindowsFormsApp1
 
         public override void ResetParticle(Particle particle)
         {
-            var particleColorful = particle as ParticleColorful;
+            var particleColorful = particle as ParticleImage;
             if (particleColorful != null)
             {
 
